@@ -13,8 +13,23 @@ class Container extends React.Component {
         e.preventDefault();
         //console.log(e.target);
         let dateFromInput = e.target[0].value;
-        this.setState({date: dateFromInput});
-        this.getPhoto(dateFromInput);
+        const dateInputExpression = /((\d\d\d\d)-(\d\d)-(\d\d))/
+        let match;
+        match = dateFromInput.match(dateInputExpression); 
+        if(match === true) {
+            this.setState({date: dateFromInput});
+            this.getPhoto(dateFromInput);
+        }
+        else if (match == false) {
+            alert('Please format your date in the YYYY-MM-DD Format1');
+        }
+        else if (dateFromInput === '') {
+            alert('Please provide a date input!')
+        }
+        else {
+            alert('Please format your date in the YYYY-MM-DD Format2');
+        }
+
     }
 
 
