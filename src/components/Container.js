@@ -13,25 +13,23 @@ class Container extends React.Component {
         e.preventDefault();
         //console.log(e.target);
         let dateFromInput = e.target[0].value;
-        const dateInputExpression = /((\d\d\d\d)-(\d\d)-(\d\d))/
-        let match;
-        match = dateFromInput.match(dateInputExpression); 
+        const dateInputExpression = /\d\d\d\d-\d\d-(\d\d)/
+        let match = dateInputExpression.test(dateFromInput); 
         if(match === true) {
             this.setState({date: dateFromInput});
             this.getPhoto(dateFromInput);
         }
-        else if (match == false) {
-            alert('Please format your date in the YYYY-MM-DD Format1');
-        }
-        else if (dateFromInput === '') {
+        else if (match === false && dateFromInput === '') {
             alert('Please provide a date input!')
         }
+        else if (match === false) {
+            alert('Please format your date in the YYYY-MM-DD Format');
+        }
         else {
-            alert('Please format your date in the YYYY-MM-DD Format2');
+            alert('Please format your date in the YYYY-MM-DD Format');
         }
 
     }
-
 
     componentDidMount() {
         fetch('https://api.nasa.gov/planetary/apod?api_key=5bwusI9qscfoa7RwBqgZ97BfBzXrUCd2Ri4zTH4j')
@@ -40,7 +38,7 @@ class Container extends React.Component {
     }
 
     getPhoto = (date) => {
-        fetch(`https://api.nasa.gov/planetary/apod?date=${date}&api_key=DEMO_KEY`)
+        fetch(`https://api.nasa.gov/planetary/apod?date=${date}&api_key=5bwusI9qscfoa7RwBqgZ97BfBzXrUCd2Ri4zTH4j`)
         .then(res => res.json())
         .then(photoData => this.setState({photo: photoData}))
     }
