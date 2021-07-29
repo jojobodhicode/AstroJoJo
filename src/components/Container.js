@@ -40,7 +40,9 @@ class Container extends React.Component {
     getPhoto = (date) => {
         fetch(`https://api.nasa.gov/planetary/apod?date=${date}&api_key=5bwusI9qscfoa7RwBqgZ97BfBzXrUCd2Ri4zTH4j`)
         .then(res => res.json())
-        .then(photoData => this.setState({photo: photoData}))
+        .then(photoData => {
+            console.log(photoData);
+            this.setState({photo: photoData})})
     }
 
     render() {

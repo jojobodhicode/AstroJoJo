@@ -14,7 +14,7 @@ function Intro () {
           <img src={logo} className="logo-width p-3" alt="jojojordie logo"/>
           <div className="d-flex flex-column align-items-center p-3 w-100">
             <h1 className="">AstroJoJo</h1>
-            <p style={{"max-width" : "50rem"}}>A web app that consults NASA's Astronomy Picture of the Day API to print out a picture given the date. Made in React!</p>
+            <p style={{"maxWidth" : "50rem"}}>A web app that consults NASA's Astronomy Picture of the Day API to print out a picture given the date. Made in React!</p>
           </div>
       </div>
     </>
