@@ -47,7 +47,7 @@ class Container extends React.Component {
 
     render() {
         return (
-            <div className="d-flex flex-column align-items-center bg-secondary mx-3 my-5 p-4 rounded">
+            <div className="d-flex flex-column align-items-center bg-secondary mx-3 my-5 p-3 rounded">
                 <DateInput changeDate={this.changeDate}/>
                 <Photo photo={this.state.photo}/>
             </div>
