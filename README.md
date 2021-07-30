@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+Hello!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is AstroJoJo, a web app designed to fetch information from NASA's Astronomy Picture of the Day, returning the title, image, video, and description with a given input date.
 
-## Available Scripts
+This exercise was done in to fullfil the requirements of the Code Louisville JavaScript Certificate Course.
 
-In the project directory, you can run:
+SPECIAL INSTRUCTIONS:
+After cloning the repo, in your terminal you will want to "npm install", or "yarn install" to get the required dependencies. You must have NodeJS as this is a React App.
+Make sure you are CDed into /AstroJoJo with your terminal of choice.
+Use "npm start" or "yarn start" (depending on what manager you are using) to host the app on localhost:3000.
+It should auto open up a window for you, but if it doesn't, navigate to "http://localhost:3000/"
 
-### `yarn start`
+ALTERNATIVELY:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+https://astro-jo-jo.vercel.app/
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+I have the repo hosted up on vercel.com
 
-### `yarn test`
+This app features the following:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* It is written in React
+* It makes use of the latest Bootstrap for responsive design styling for mobile, tablet, and desktop
+* It consults an external API and displays data from that API (The NASA Astronomy Picture of the Day) and displays it
+* It implements a regex expression for form validation in the date picker (which features a nice and easy to access calander)
+* For "Create and use a function that accepts two or more values (parameters), calculates or determines a new value based on those inputs, and returns a new value",
+this is done multiple times as many of the components (which are functions), accept props (which are parameters) which change the respective state (which is the value).
+* Likewise, please appreciate this is a first delving into React and thus the main exercise was to make use of the framework consisting of:
+* Creating, displaying, and styling custom components,
+* Feeding those components props and
+* Changing the state of the elements on the page depending on the functionality of those components.
 
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+I hope you enjoy my project! To infinity and beyond!
